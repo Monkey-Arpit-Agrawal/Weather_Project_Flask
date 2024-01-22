@@ -7,11 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather Application</title>
     <link rel="stylesheet" href="{{ url_for('static',filename='styles/style.css')}}" />
+    
 </head>
 <body>
     <h1>Weather Conditions</h1>
     <form action="/weather">
-        <input type="text" id="city" name="city" />
+        <input type="text" id="city" name="city" placeholder="Enter the city"/>
+        <button type="submit">Submit</button>
     </form>
 </body>
 </html>
